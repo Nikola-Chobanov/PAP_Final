@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C439ABAD-5EA4-4499-8461-C9437DF4BAE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>G02_Gustavo_02.My.MyApplication</StartupObject>
+    <RootNamespace>G02_Gustavo_02</RootNamespace>
+    <AssemblyName>G02_Gustavo_02</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>G02_Gustavo_02.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>G02_Gustavo_02.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v22.2.Win, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Presets, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Win, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Infragistics4.Win.UltraWinLiveTileView.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinListView.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Shared.v22.2, Version=22.2.20222.16, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v22.2.Drawing, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Export, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Wizard, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.2.CodeCompletion, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2.Core.Desktop, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2.GoogleCalendar, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ClsAnimais.vb" />
+    <Compile Include="Classes\ClsApp.vb" />
+    <Compile Include="Classes\ClsAppointments.vb" />
+    <Compile Include="Classes\ClsArtigos.vb" />
+    <Compile Include="Classes\ClsCalendarios.vb" />
+    <Compile Include="Classes\ClsCalendario_Detalhes.vb" />
+    <Compile Include="Classes\ClsCalendario_Feriados.vb" />
+    <Compile Include="Classes\ClsCategorias.vb" />
+    <Compile Include="Classes\ClsConcelhos.vb" />
+    <Compile Include="Classes\ClsConsultas.vb" />
+    <Compile Include="Classes\ClsCP_Localidades.vb" />
+    <Compile Include="Classes\ClsDistritos.vb" />
+    <Compile Include="Classes\ClsDoc.vb" />
+    <Compile Include="Classes\ClsEmpresas.vb" />
+    <Compile Include="Classes\ClsEnderecos.vb" />
+    <Compile Include="Classes\ClsEntidades.vb" />
+    <Compile Include="Classes\ClsIVA.vb" />
+    <Compile Include="Classes\ClsLinhas.vb" />
+    <Compile Include="Classes\ClsPaises.vb" />
+    <Compile Include="Classes\ClsPT_Enderecos.vb" />
+    <Compile Include="Classes\ClsQI.vb" />
+    <Compile Include="Classes\ClsRaca_Animais.vb" />
+    <Compile Include="Classes\ClsResources.vb" />
+    <Compile Include="Classes\ClsSalas.vb" />
+    <Compile Include="Classes\ClsSeries.vb" />
+    <Compile Include="Classes\ClsTipos_Doc.vb" />
+    <Compile Include="Classes\ClsTipos_Pagamento.vb" />
+    <Compile Include="Classes\ClsTipos_Animais.vb" />
+    <Compile Include="Classes\ClsTipos_Consulta.vb" />
+    <Compile Include="Classes\clsUtils.vb" />
+    <Compile Include="Classes\clsVeterinarios.vb" />
+    <Compile Include="Forms\frmApp.Designer.vb">
+      <DependentUpon>frmApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.Designer.vb">
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OutlookAppointmentForm.Designer.vb">
+      <DependentUpon>OutlookAppointmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OutlookAppointmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="I2021_G2DataSet.vb">
+      <DependentUpon>I2021_G2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="I2021_G2DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>I2021_G2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\xrFAT.Designer.vb">
+      <DependentUpon>xrFAT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrFAT.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrQI.Designer.vb">
+      <DependentUpon>xrQI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrQI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFaturacao.Designer.vb">
+      <DependentUpon>ucFaturacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFaturacao.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucComparaReceitas.Designer.vb">
+      <DependentUpon>ucComparaReceitas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucComparaReceitas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucConsultas.Designer.vb">
+      <DependentUpon>ucConsultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucConsultas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDashboard.Designer.vb">
+      <DependentUpon>ucDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucGetReceitas.Designer.vb">
+      <DependentUpon>ucGetReceitas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucGetReceitas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProcurar.Designer.vb">
+      <DependentUpon>ucProcurar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProcurar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSplash.Designer.vb">
+      <DependentUpon>ucSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVeterinario.Designer.vb">
+      <DependentUpon>ucVeterinario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVeterinario.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVeterinarios.Designer.vb">
+      <DependentUpon>ucVeterinarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVeterinarios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Animais.Designer.vb">
+      <DependentUpon>UC_Animais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Animais.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Calendarios.Designer.vb">
+      <DependentUpon>UC_Calendarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Calendarios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Consultas.Designer.vb">
+      <DependentUpon>UC_Consultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Consultas.vb" />
+    <Compile Include="UserControls\UC_Doc.Designer.vb">
+      <DependentUpon>UC_Doc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Doc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Entidades.Designer.vb">
+      <DependentUpon>UC_Entidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Entidades.vb" />
+    <Compile Include="UserControls\UC_Inicio.Designer.vb">
+      <DependentUpon>UC_Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Inicio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_NAV1.designer.vb">
+      <DependentUpon>UC_NAV1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_NAV1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Sair.Designer.vb">
+      <DependentUpon>UC_Sair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Sair.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Series.Designer.vb">
+      <DependentUpon>UC_Series.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Series.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucUtilizador.Designer.vb">
+      <DependentUpon>ucUtilizador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucUtilizador.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frmApp.resx">
+      <DependentUpon>frmApp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDashboard.resx">
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlookAppointmentForm.resx">
+      <DependentUpon>OutlookAppointmentForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrFAT.resx">
+      <DependentUpon>xrFAT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrQI.resx">
+      <DependentUpon>xrQI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucFaturacao.resx">
+      <DependentUpon>ucFaturacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucComparaReceitas.resx">
+      <DependentUpon>ucComparaReceitas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDashboard.resx">
+      <DependentUpon>ucDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucGetReceitas.resx">
+      <DependentUpon>ucGetReceitas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSplash.resx">
+      <DependentUpon>ucSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVeterinario.resx">
+      <DependentUpon>ucVeterinario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVeterinarios.resx">
+      <DependentUpon>ucVeterinarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Animais.resx">
+      <DependentUpon>UC_Animais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Calendarios.resx">
+      <DependentUpon>UC_Calendarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Consultas.resx">
+      <DependentUpon>UC_Consultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Doc.resx">
+      <DependentUpon>UC_Doc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Entidades.resx">
+      <DependentUpon>UC_Entidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Inicio.resx">
+      <DependentUpon>UC_Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_NAV1.resx">
+      <DependentUpon>UC_NAV1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Sair.resx">
+      <DependentUpon>UC_Sair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Series.resx">
+      <DependentUpon>UC_Series.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucUtilizador.resx">
+      <DependentUpon>ucUtilizador.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="I2021_G2DataSet.xsc">
+      <DependentUpon>I2021_G2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="I2021_G2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>I2021_G2DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="I2021_G2DataSet.xss">
+      <DependentUpon>I2021_G2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\ClsAnimais.datasource" />
+    <None Include="My Project\DataSources\ClsCalendarios.datasource" />
+    <None Include="My Project\DataSources\ClsConsultas.datasource" />
+    <None Include="My Project\DataSources\ClsDoc.datasource" />
+    <None Include="My Project\DataSources\ClsEntidades.datasource" />
+    <None Include="My Project\DataSources\ClsLinhas.datasource" />
+    <None Include="My Project\DataSources\ClsQI.datasource" />
+    <None Include="My Project\DataSources\ClsSeries.datasource" />
+    <None Include="My Project\DataSources\ClsTipos_Pagamento.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images\Artigos\" />
+    <Folder Include="Resources\Images\Categorias\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <Content Include="Resources\Images\ProximoArtigos.png" />
+    <Content Include="Resources\Images\ProximoArtigosShade.png" />
+    <Content Include="Resources\Images\VoltarArtigos.png" />
+    <Content Include="Resources\Images\VoltarArtigosShade.png" />
+    <None Include="Resources\ReceitasShade.png" />
+    <None Include="Resources\Receitas.png" />
+    <None Include="Resources\AnoBtn.png" />
+    <None Include="Resources\Comparar.png" />
+    <None Include="Resources\CompararShade.png" />
+    <Content Include="Resources\Images\AdicionarConsulta.png" />
+    <Content Include="Resources\Images\Agenda.png" />
+    <Content Include="Resources\Images\AlterarConsulta.png" />
+    <Content Include="Resources\Images\Animais\A0001.png" />
+    <Content Include="Resources\Images\Animais\A0002.png" />
+    <Content Include="Resources\Images\Animais\A0003.png" />
+    <Content Include="Resources\Images\Animais\Default.png" />
+    <Content Include="Resources\Images\Animais\Entidades\C0007.png" />
+    <Content Include="Resources\Images\Animais\Entidades\Default.png" />
+    <Content Include="Resources\Images\AnoBtn.png" />
+    <Content Include="Resources\Images\Anterior.png" />
+    <Content Include="Resources\Images\Apaga.png" />
+    <Content Include="Resources\Images\ApagarImagem.png" />
+    <Content Include="Resources\Images\ApagarImagemShade.png" />
+    <Content Include="Resources\Images\ApagarImagemShade2.png" />
+    <Content Include="Resources\Images\Arrow_Down.png" />
+    <Content Include="Resources\Images\Arrow_Flat.png" />
+    <Content Include="Resources\Images\Artigos.png" />
+    <Content Include="Resources\Images\BackGroundLogin.png" />
+    <Content Include="Resources\Images\BackGroundMain.png" />
+    <Content Include="Resources\Images\backLogin.png" />
+    <Content Include="Resources\Images\backLoginShade.png" />
+    <Content Include="Resources\Images\BarraPesquisa.png" />
+    <Content Include="Resources\Images\BloquearHorario.png" />
+    <Content Include="Resources\Images\Calendario.png" />
+    <Content Include="Resources\Images\Cancela.png" />
+    <Content Include="Resources\Images\CaoLogin.png" />
+    <Content Include="Resources\Images\CarregarImagem.png" />
+    <Content Include="Resources\Images\CarregarImagemShade.png" />
+    <Content Include="Resources\Images\CarregarImagemShade2.png" />
+    <Content Include="Resources\Images\CheckEdit.png" />
+    <Content Include="Resources\Images\CheckEditChecked.png" />
+    <Content Include="Resources\Images\CheckEditCheckedSVG.svg" />
+    <Content Include="Resources\Images\CheckEditSVG.svg" />
+    <Content Include="Resources\Images\Comparar.png" />
+    <Content Include="Resources\Images\CompararShade.png" />
+    <Content Include="Resources\Images\ConsultasSemana.png" />
+    <Content Include="Resources\Images\CriarSerie.png" />
+    <Content Include="Resources\Images\CriarSerieShade.png" />
+    <Content Include="Resources\Images\CriarSerieShade2.png" />
+    <Content Include="Resources\Images\Dashboard.png" />
+    <Content Include="Resources\Images\Default.png" />
+    <Content Include="Resources\Images\DefaultAnimal.png" />
+    <Content Include="Resources\Images\Definicoes.png" />
+    <Content Include="Resources\Images\Entidades\C0001.png" />
+    <Content Include="Resources\Images\Entidades\C0001001.png" />
+    <Content Include="Resources\Images\Entidades\C0007.png" />
+    <Content Include="Resources\Images\Entidades\Default.png" />
+    <Content Include="Resources\Images\Entidades\F0001.png" />
+    <Content Include="Resources\Images\Entrar.png" />
+    <Content Include="Resources\Images\EntrarShade.png" />
+    <Content Include="Resources\Images\Fechar.png" />
+    <Content Include="Resources\Images\Grava.png" />
+    <Content Include="Resources\Images\IconAdicionar.png" />
+    <Content Include="Resources\Images\IconAlterar.png" />
+    <Content Include="Resources\Images\IconBloquear.png" />
+    <Content Include="Resources\Images\IconHome.png" />
+    <Content Include="Resources\Images\IconProcurar.png" />
+    <Content Include="Resources\Images\IconVeterinarios.png" />
+    <Content Include="Resources\Images\Imprimir.png" />
+    <Content Include="Resources\Images\ImprimirShade.png" />
+    <Content Include="Resources\Images\Inicio.png" />
+    <Content Include="Resources\Images\Logo.png" />
+    <Content Include="Resources\Images\Lupa.png" />
+    <Content Include="Resources\Images\Maximizar.png" />
+    <Content Include="Resources\Images\MesBtn.png" />
+    <Content Include="Resources\Images\Minimizar.png" />
+    <Content Include="Resources\Images\Modifica.png" />
+    <Content Include="Resources\Images\Novo.png" />
+    <Content Include="Resources\Images\OlhoA.png" />
+    <Content Include="Resources\Images\OlhoF.png" />
+    <Content Include="Resources\Images\PanelDashboard.png" />
+    <Content Include="Resources\Images\picPerfil.png" />
+    <Content Include="Resources\Images\picVeterinario.png" />
+    <Content Include="Resources\Images\Primeiro.png" />
+    <Content Include="Resources\Images\ProcurarConsulta.png" />
+    <Content Include="Resources\Images\Proximo.png" />
+    <Content Include="Resources\Images\Quadrado.png" />
+    <Content Include="Resources\Images\Receitas.png" />
+    <Content Include="Resources\Images\ReceitaSemana.png" />
+    <Content Include="Resources\Images\ReceitasShade.png" />
+    <Content Include="Resources\Images\Restaurar.png" />
+    <Content Include="Resources\Images\Sair.png" />
+    <Content Include="Resources\Images\SairLogin.png" />
+    <Content Include="Resources\Images\SairLoginShade.png" />
+    <Content Include="Resources\Images\SairNav.png" />
+    <Content Include="Resources\Images\SemanaBtn.png" />
+    <Content Include="Resources\Images\SemanasBtn.png" />
+    <Content Include="Resources\Images\SemConsultas.png" />
+    <Content Include="Resources\Images\SemestreBtn.png" />
+    <Content Include="Resources\Images\Seta.png" />
+    <Content Include="Resources\Images\Shade.png" />
+    <Content Include="Resources\Images\Shade1.png" />
+    <Content Include="Resources\Images\Shade2.png" />
+    <Content Include="Resources\Images\ShadeSmall.png" />
+    <Content Include="Resources\Images\TiposAnimais\Default.png" />
+    <Content Include="Resources\Images\TiposAnimais\TA01.png" />
+    <Content Include="Resources\Images\TiposAnimais\TA02.png" />
+    <Content Include="Resources\Images\TiposAnimais\TA03.png" />
+    <Content Include="Resources\Images\TiposAnimais\TA04.png" />
+    <Content Include="Resources\Images\TiposAnimais\TA05.png" />
+    <Content Include="Resources\Images\TotalPacientes.png" />
+    <Content Include="Resources\Images\TotalVeterinarios.png" />
+    <Content Include="Resources\Images\TrimesteBtn.png" />
+    <Content Include="Resources\Images\ucSplashBack.png" />
+    <Content Include="Resources\Images\ucSplashBack2.png" />
+    <Content Include="Resources\Images\UltimasTresConsultas.png" />
+    <Content Include="Resources\Images\Ultimo.png" />
+    <Content Include="Resources\Images\Veterinarios.png" />
+    <Content Include="Resources\Images\VeterinariosIcon.png" />
+    <Content Include="Resources\Images\Veterinarios\Default.png" />
+    <Content Include="Resources\Images\Veterinarios\V0001.jpg" />
+    <Content Include="Resources\Images\Veterinarios\V0002.jpg" />
+    <Content Include="Resources\Images\Veterinarios\V0003.jpg" />
+    <None Include="Resources\MesBtn.png" />
+    <None Include="Resources\SemanasBtn.png" />
+    <None Include="Resources\SemestreBtn.png" />
+    <None Include="Resources\SemanaBtn.png" />
+    <None Include="Resources\TrimesteBtn.png" />
+    <None Include="Resources\Seta.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
